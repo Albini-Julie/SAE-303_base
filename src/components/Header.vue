@@ -58,7 +58,7 @@
         <div class="flex items-center m-5 justify-evenly  ">
         <RouterLink class="font-noto-sans text-center font-semibold text-black lg:text-[25px] md:text-[20px] xl:text-[30px]" to="/etuaca">Les académies</RouterLink>
         <span class="sr-only">Répartition des étudiants par académie</span>
-        <router-link class="font-noto-sans text-center font-semibold text-black lg:text-[25px]md:text-[20px] xl:text-[30px]" to="/genres">
+        <router-link class="font-noto-sans text-center font-semibold text-black lg:text-[25px] md:text-[20px] xl:text-[30px]" to="/genres">
                 Les genres
         </router-link>
         <span class="sr-only">Les genres</span>
