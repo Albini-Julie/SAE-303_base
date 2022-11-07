@@ -43,7 +43,7 @@
     <h4 class="h2 mt-5 text-Bleu_clair text-center font-bold">Ce que l’on peut en tirer...</h4>
     <p class="texte xl:mx-10 my-10">La présence des femmes en plus grand nombre parmi les bacheliers d’un bac général, et des hommes parmi les étudiants issus de bacs professionnels peut s’expliquer par différentes causes toutes reliées au procédé de socialisation.</p>
 
-    <router-link to="/typeseta">
+    <router-link to="/temps">
     <bouton class="my-10 mx-auto">Lire un autre article</bouton>
     </router-link>
 
