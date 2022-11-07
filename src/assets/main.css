@@ -1,0 +1,11 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .h2 {
+    @apply font-albert-sans xl:text-[40px] md:text-[30px] text-[20px]
+};
+}
