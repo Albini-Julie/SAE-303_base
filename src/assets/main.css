@@ -6,6 +6,10 @@
 @layer components {
 
     .h2 {
-    @apply font-albert-sans xl:text-[40px] md:text-[30px] text-[20px]
+    @apply font-albert-sans xl:text-[40px] md:text-[30px] text-[20px] text-center
 };
+
+    .texte {
+        @apply font-noto-sans xl:text-[25px] md:text-[20px] text-[14px] mx-3
+    }
 }
