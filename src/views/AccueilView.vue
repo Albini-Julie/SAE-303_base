@@ -16,10 +16,10 @@
         <h3 class="h2 my-5 text-Rose_foncé">Recherchez ici les écoles dans votre département !</h3>
         <img class="w-full" src="/map.jpg" alt="carte"/>
 
-        <routerlink to="/etuaca">
+        <router-link to="/etuaca">
         <bouton class="my-10 mx-auto">Lire un article</bouton>
         <span class="sr-only">Lire un article</span>
-        </routerlink>
+        </router-link>
 
         <Footer/>
     </div>
