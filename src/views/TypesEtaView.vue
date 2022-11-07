@@ -11,7 +11,9 @@
     <p class="texte xl:mx-10">Si vous êtes étudiant et que vous voulez spécifiquement vous diriger dans une Université, vous pouvez avoir accès à quelle Université est disponible dans quelle région !</p>
     <p class="texte xl:mx-10">Et ce n’est qu’un exemple parmi toutes les possibilités proposées ! </p>
 
+    <router-link to="/genres">
     <bouton class="my-10 mx-auto">Lire un autre article</bouton>
+    </router-link>
 
     <Footer/>
 </template>
