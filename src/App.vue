@@ -8,6 +8,10 @@
     <h2 class="font-albert-sans text-center text-Bleu_marine font-semibold h2">L’enseignement supérieur en chiffres</h2>
   </div>
   </div>
+
+   <Suspense>
+    <router-view class="" />
+  </Suspense>
 </template>
 
 <script setup>
