@@ -56,17 +56,17 @@
 
     <div class="hidden md:block">
         <div class="flex items-center m-5 justify-evenly  ">
-        <RouterLink class="font-noto-sans text-center font-semibold text-Bleu_marine lg:text-[25px] md:text-[20px] xl:text-[30px]" to="/etuaca">Les académies</RouterLink>
+        <RouterLink class="font-noto-sans text-center font-semibold text-black lg:text-[25px] md:text-[20px] xl:text-[30px]" to="/etuaca">Les académies</RouterLink>
         <span class="sr-only">Répartition des étudiants par académie</span>
-        <router-link class="font-noto-sans text-center font-semibold text-Bleu_marine lg:text-[25px]md:text-[20px] xl:text-[30px]" to="/genres">
+        <router-link class="font-noto-sans text-center font-semibold text-black lg:text-[25px]md:text-[20px] xl:text-[30px]" to="/genres">
                 Les genres
         </router-link>
         <span class="sr-only">Les genres</span>
-        <router-link class="font-noto-sans text-center font-semibold text-Bleu_marine lg:text-[25px] md:text-[20px] xl:text-[30px]" to="/typeseta">
+        <router-link class="font-noto-sans text-center font-semibold text-black lg:text-[25px] md:text-[20px] xl:text-[30px]" to="/typeseta">
                 Les types d’établissement
             </router-link>
             <span class="sr-only">Les types d’établissement dans l’enseignement supérieur</span>
-        <router-link class="font-noto-sans text-center font-semibold text-Bleu_marine lg:text-[25px] md:text-[20px] xl:text-[30px]" to="/temps">
+        <router-link class="font-noto-sans text-center font-semibold text-blacks lg:text-[25px] md:text-[20px] xl:text-[30px]" to="/temps">
                 Histoire
         </router-link>
         <span class="sr-only">L’enseignement supérieur dans le temps</span>
