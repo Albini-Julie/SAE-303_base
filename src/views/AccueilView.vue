@@ -11,7 +11,9 @@
         </div>
 
         <h3 class="h2 my-5 text-Rose_foncé">Recherchez ici les écoles dans votre régions !</h3>
-        <img class="w-full lg:mb-24" src="/map.jpg" alt="carte"/>
+        
+        <mapRegion class=""/>
+        
 
         <h3 class="h2 my-5 text-Rose_foncé">Recherchez ici les écoles dans votre département !</h3>
         <img class="w-full" src="/map.jpg" alt="carte"/>
@@ -29,5 +31,6 @@
 <script setup>
 import bouton from "../components/Bouton.vue"
 import Footer from "../components/Footer.vue"
+import mapRegion from "../components/MapRégion.vue"
 
 </script>
