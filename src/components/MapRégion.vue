@@ -49,7 +49,7 @@
             //On vérifie dans la console l'obtention des résultats
             console.log("reponse", listeReg);
             //Valeur 0 par défaut : Sélectionner un département
-            depSelect.value="0"
+            regSelect.value="0"
         })
         .catch(error => console.log('erreur Ajax'))
     })
