@@ -1,4 +1,5 @@
 <template>
+    
     <h3 class="h2 mb-5 xl:text-[45px] md:text-[35px] text-[25px] text-Bleu_marine font-bold">L’enseignement supérieur et les genres</h3>
     <p class="texte text-center">Le bac est une étape indispensable pour passer à l’enseignement supérieur. Cependant, nous savons que les genres ne sont pas égaux et autant présents dans les filières. Nous allons étudier ici la présence des filles. </p>
 
