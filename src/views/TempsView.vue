@@ -4,7 +4,7 @@
     <h3 class="h2 my-5 text-Rose_foncé">Recherchez ici les écoles dans votre département !</h3>
     <mapDep/>    
 
-    <img class="mb-10 w-full" src="/graphique.jpg" alt="graphique"/>
+    <Linear class="my-10 mx-auto"/>
     <p class="texte xl:mx-10">L’enseignement supérieur a beaucoup évolué au cours du temps. C’est ce qui se retranscrit très bien dans le graphique ci-dessus. En effet, on peut voir que la création des écoles a été mouvementé selon les années. </p>
 
     <div class="lg:flex items-center">
@@ -36,4 +36,5 @@ import livre from "../components/icons/livre.vue"
 import bouton from "../components/Bouton.vue"
 import Footer from "../components/Footer.vue"
 import mapDep from "../components/MapDepart.vue"
+import Linear from "../components/LineChart.vue"
 </script>
