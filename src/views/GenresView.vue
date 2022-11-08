@@ -5,13 +5,13 @@
 
     <div class="xl:my-32">
     <h4 class="h2 my-5 text-Bleu_clair text-center font-bold">Répartition des filles selon les types de bac entre 2010 et 2021</h4>
-    <div class="lg:flex gap-10">
-    <Barchartfille class="ml-5 my-5 lg:w-1/2 lg:h-1/2"/>
-    <Barchargarcon class="mr-5 lg:w-1/2 lg:h-1/2"/>
+    <div class="md:flex justify-center gap-10">
+    <DonutFille class="ml-5 my-5 md:w-1/3 md:h-1/3"/>
+    <DonutGarcon class="mr-5 md:w-1/3 md:h-1/3"/>
     </div>
     </div>
 
-    <p class="texte xl:mx-10">On peut lire sur ces graphiques que les femmes sont majoritaires dans les titulaires du bac général parmi ceux qui continuent les études supérieures. Elles sont 2 240 000 à avoir réussi ce bac et a continué les études entre 2010 et 2021, soit 25% de plus que les hommes dans ce même bac.</p>
+    <p class="texte xl:mx-10">On peut lire sur ces graphiques que les femmes sont majoritaires dans les titulaires du bac général parmi ceux qui continuent les études supérieures. Elles sont 2 227 115 à avoir réussi ce bac et a continué les études entre 2010 et 2021, soit 25% de plus que les hommes dans ce même bac.</p>
     <p class="texte xl:mx-10">A l’inverse, elles sont minoritaires dans les bacs professionnels. En effet, elles sont 38% de moins que les hommes. Seul le bac technologique dispose d’une équité de présence des deux genres.</p>
 
     <div class="lg:flex items-center">
@@ -58,6 +58,6 @@
 <script setup>
 import bouton from "../components/Bouton.vue"
 import Footer from "../components/Footer.vue"
-import Barchartfille from "../components/BarChartfille.vue"
-import Barchargarcon from "../components/BarChartGarçon.vue"
+import DonutFille from "../components/DoughnutChartFille.vue"
+import DonutGarcon from "../components/DoughnutChartGarcon.vue"
 </script>
