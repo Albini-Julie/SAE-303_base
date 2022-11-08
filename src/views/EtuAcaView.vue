@@ -2,7 +2,7 @@
     <h3 class="h2 mb-5 xl:text-[45px] md:text-[35px] text-[25px] text-Rose_foncé font-bold">Répartition des étudiants par académie</h3>
     <div class="lg:flex items-center">
     <p class="texte text-center">Nous allons ici étudier la répartition des étudiants de l’enseignement supérieur selon les académies entre 2010 et 2021.</p>
-    <img class="lg:w-1/2 lg:h-1/2 my-5" src="/pie.png" alt="graphique pie"/>
+    <Donut/>
     </div>
     
     <p class="texte mt-10 xl:mx-10">Les académies ayant accueilli le plus d’étudiants dans le supérieur entre 2010 et 2021 sont Versailles avec 9% des éudiants parmi toute la France, Créteil (6,5%) et Lille (6,3%). Ces trois villes sont suivies de Nantes (5,8%), Rennes (5,3%) et Grenoble (5,1%). Ces grandes villes disposent de nombreuses écoles et sont attractives pour les étudiants de part leur dynamisme.  </p><br/>
@@ -31,5 +31,6 @@
 <script setup>
 import bouton from "../components/Bouton.vue"
 import Footer from "../components/Footer.vue"
+import Donut from "../components/DoughnutChart.vue"
 
 </script>
