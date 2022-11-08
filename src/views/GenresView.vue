@@ -3,8 +3,10 @@
     <h3 class="h2 mb-5 xl:text-[45px] md:text-[35px] text-[25px] text-Bleu_marine font-bold">L’enseignement supérieur et les genres</h3>
     <p class="texte text-center">Le bac est une étape indispensable pour passer à l’enseignement supérieur. Cependant, nous savons que les genres ne sont pas égaux et autant présents dans les filières. Nous allons étudier ici la présence des filles. </p>
 
+    
     <div class="xl:my-32">
-    <h4 class="h2 my-5 text-Bleu_clair text-center font-bold">Répartition des filles selon les types de bac entre 2010 et 2021</h4>
+        <h4 class="h2 my-10 text-Bleu_clair text-center font-bold">Répartition des filles selon les types de bac entre 2010 et 2021</h4>
+    <h4 class="texte my-5 text-black text-center font-bold">Répartition des filles et des garçons selon les types de bac entre 2010 et 2021</h4>
     <div class="md:flex justify-center gap-10">
     <DonutFille class="ml-5 my-5 md:w-1/3 md:h-1/3"/>
     <DonutGarcon class="mr-5 md:w-1/3 md:h-1/3"/>

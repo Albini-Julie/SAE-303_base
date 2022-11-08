@@ -40,6 +40,7 @@ import {getLabels, countDatas} from "../composables/utilsApp"
         const chartOptions = reactive ({
             responsive: true, 
             maintainAspectRatio: false
+            
         })
 
         
@@ -57,7 +58,6 @@ import {getLabels, countDatas} from "../composables/utilsApp"
             listeEnseign.value = response.records
             console.log(response)
             //Titre du graphique
-            //chartOptions.plugins.title = "Lignes de l'enseignement supérieur"
             chartData.labels = getLabels(listeEnseign.value, 'fields.serie_du_bac#1')
             //Comptage
             chartData.datasets[0].data = countDatas(listeEnseign.value, chartData.labels, 'fields.serie_du_bac#1')
