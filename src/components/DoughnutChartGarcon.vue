@@ -45,8 +45,7 @@ import {getLabels, countDatas} from "../composables/utilsApp"
 
         
         let liste = ref(null);
-    //Liste des oui non
-    //table nb de villageois par spécialité
+    
     let lstNb = [];
     let listeEnseign = [];
     let loading = ref()
@@ -61,21 +60,11 @@ import {getLabels, countDatas} from "../composables/utilsApp"
             chartData.labels = getLabels(listeEnseign.value, 'fields.serie_du_bac#1')
             //Comptage
             chartData.datasets[0].data = countDatas(listeEnseign.value, chartData.labels, 'fields.serie_du_bac#1')
-             //Coloration de base pour coloration dégradée (vert)
-            // baseColor.value = 'rgba(0, 255, 0, #deg#)'
-            // console.log("baseColor : ", baseColor)
-            //Determine le mode demandé
+             
             
         })
             loading.value = true
-            // let setBacs = new Set()
-            // let firstLine = true
-            // listeEnseign.value.forEach( (el) => {
-            //     if(!firstLine){ 
-            //         setBacs.add(el[label]) 
-            //     }
-            //     firstLine = false
-            // })
+            
             let cptfille = []
             chartData.labels.forEach((lbl) =>{
               let i = 0
@@ -87,35 +76,6 @@ import {getLabels, countDatas} from "../composables/utilsApp"
               cptfille.push(i)
             })
             chartData.datasets[0].data = cptfille
-            //Chargement des labels
-            // chartData.labels = Array.from(setBacs)
-            
-            // // Comptage nb accidents par type de voie
-            // // On créé un tableau de la taille de celui des labels
-            // // Avec toutes les cellulles à zero (fill)
-            // let cptfilles = new Array(chartData.labels.length).fill(0)
-            // // Compteur pour comptage
-            // let i=0
-            // chartData.labels.forEach( (label) =>{
-            //   firstLine = true
-            //   liste.value.forEach( (val) => {
-            //       if(!firstLine){                    
-            //         if(val[fields.genre] == "Féminin"){
-            //           cptfilles[i]++
-            //         }
-            //     }
-            //     firstLine = false
-            //   })
-            //   i++
-            // })
-            // // Comptage total pour vérif.
-            // let totalAcc = 0
-            // cptRoutes.forEach( (route)=>{
-            //   totalAcc += route
-            // })
-            // // Mise à jour labal avec nb accidents
-            // chartData.datasets[0].label += " ("+totalAcc+" accidents)" 
-        
             
             //Calcul des couleurs et bordures
                 let bgColor=[];

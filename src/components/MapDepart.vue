@@ -16,7 +16,7 @@
     //Département sélectionné
     let depSelect = ref()
 
-    //Liste des gars pour un département
+    //Liste des écoles pour un département
     let listeEcoles = ref()
 
     //Lorsque le composant est monté dans la vue
@@ -54,10 +54,10 @@
         .catch(error => console.log('erreur Ajax'))
     })
     
-    //Fonction de sélection du dpértement
+    //Fonction de sélection du département
     const selection = async (dep) =>{
         console.log("région sélectionnée", dep)
-        //Requête Sncf
+        //Requête
         let request = 'https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/'
         +'?dataset=fr-esr-cartographie_formations_parcoursup'
         +'&q=' + dep
@@ -90,9 +90,9 @@
         .then(response => response.json())
         //Récupération de la réponse
         .then(response => {
-            //Récupération de la liste des gars
+            //Récupération de la liste des écoles
             listeEcoles.value = response.records;
-            //On vérifie dans la console l'obetention des résultats
+            //On vérifie dans la console l'obstention des résultats
             console.log("Liste des écoles", listeEcoles);
             //Instanciation des markers 
             //Calque featureGroup - groupe de calques (markers)
@@ -105,7 +105,7 @@
     listeEcoles.value.forEach((ecole) =>{
         //Récupération
         let position = ecole.geometry.coordinates;
-        //nom de la commune
+        //nom de l'école
         let libelle = ecole.fields.etab_nom;
         //Ajout d'un marqueur
         //Attention latitude/longitude inversées dans les données

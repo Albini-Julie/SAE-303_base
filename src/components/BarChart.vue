@@ -73,12 +73,9 @@ const propChart = defineProps({
             
             chartData.labels = getLabels(listeEnseign.value, 'fields.aca_lib#1')
             //Comptage
-            //chartData.datasets[0].data = countDatas(listeEnseign.value, chartData.labels, 'fields.aca_lib#1')
-        })
-
-
-                
-                
+            
+        })         
+    
                 console.log("tri libellé : ", chartData.labels)
 
                 let cptbach = []

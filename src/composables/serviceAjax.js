@@ -14,7 +14,7 @@ export const getEnseign = () => {
     +'&facet=genre'
     +'&facet=aca_lib'
     // Requête concernée
-    return fetch(rq)    // on renvoie la requêteà qui la demande
+    return fetch(rq)    // on renvoie la requête à qui la demande
         .then(response => {
             return response.json()  //résultat de la requête en json
         })
@@ -51,7 +51,7 @@ export const getEcoles = () => {
     +'&facet=statut_operateur_lolf'
     +'&facet=identifiant_programme_lolf_chef_de_file'
     // Requête concernée
-    return fetch(rq)    // on renvoie la requêteà qui la demande
+    return fetch(rq)    // on renvoie la requête à qui la demande
         .then(response => {
             return response.json()  //résultat de la requête en json
         })

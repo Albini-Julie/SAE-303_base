@@ -30,11 +30,7 @@ import {reactive, ref, onMounted} from 'vue';
     });
         //Données injectées dans le graphique
         let chartData = reactive({
-            //Etiquette de l'axe
             labels: [],
-            //Valeurs de données du graphique
-            //3 datasets, en un premier temps les données sont statiques (jeux de test)
-            //Elles sont écrasées par les données réelles provenant de l'API
             datasets: [
                 {
                     //Etiquette du jeu de doonnées à projeter

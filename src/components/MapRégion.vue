@@ -11,12 +11,12 @@
     //Initialisation de la carte sous forme de ref
     let map = ref()
 
-    //Liste des départements
+    //Liste des régions
     let listeReg = ref()
-    //Département sélectionné
+    //région sélectionnée
     let regSelect = ref()
 
-    //Liste des gars pour un département
+    //Liste des gars pour une région
     let listeEcoles = ref()
 
     //Lorsque le composant est monté dans la vue
@@ -39,7 +39,7 @@
         //Porjetction de la carte avec centrage aux coordonées indiquées avec facteur d'agrandissement
         .setView([46, 1.7], 0)
 
-        //Recherche des départements - geo api gouv
+        //Recherche des régions - geo api gouv
         await fetch ('https://geo.api.gouv.fr/regions')
         //Réponse demandée en json
         .then(response => response.json())
@@ -48,13 +48,13 @@
             listeReg.value = response;
             //On vérifie dans la console l'obtention des résultats
             console.log("reponse", listeReg);
-            //Valeur 0 par défaut : Sélectionner un département
+            //Valeur 0 par défaut : Sélectionner une région
             regSelect.value="0"
         })
         .catch(error => console.log('erreur Ajax'))
     })
     
-    //Fonction de sélection du dpértement
+    //Fonction de sélection d'une région
     const selection = async (reg) =>{
         console.log("région sélectionnée", reg)
         //Requête Sncf
@@ -84,13 +84,13 @@
         +'&facet=rnd'
         +'&facet=code_formation'
         console.log("request", request)
-        //Recherche des départements - api gouv
+        //Recherche des régions - api gouv
         await fetch(request)
         //Réponse demandée en json
         .then(response => response.json())
         //Récupération de la réponse
         .then(response => {
-            //Récupération de la liste des gars
+            //Récupération de la liste des écoles
             listeEcoles.value = response.records;
             //On vérifie dans la console l'obetention des résultats
             console.log("Liste des écoles", listeEcoles);
@@ -101,11 +101,11 @@
             let myIcon = Leaflet.icon({iconUrl: '/marker-icon.png',
         shadowUrl: '/marker-shadow.png', iconSize: [25, 41],
     shadowSize: [25, 41], iconAnchor: [0, 0], shadowAnchor: [-10, -10], popupAnchor: [0, 0]});
-    //Parcours des gares
+    //Parcours des écoles
     listeEcoles.value.forEach((ecole) =>{
         //Récupération
         let position = ecole.geometry.coordinates;
-        //nom de la commune
+        //nom de l'école
         let libelle = ecole.fields.etab_nom;
         //Ajout d'un marqueur
         //Attention latitude/longitude inversées dans les données
