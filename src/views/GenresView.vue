@@ -1,11 +1,10 @@
 <template>
     
     <h3 class="h2 mb-5 xl:text-[45px] md:text-[35px] text-[25px] text-Bleu_marine font-bold">L’enseignement supérieur et les genres</h3>
-    <p class="texte text-center">Le bac est une étape indispensable pour passer à l’enseignement supérieur. Cependant, nous savons que les genres ne sont pas égaux et autant présents dans les filières. Nous allons étudier ici la présence des filles. </p>
+    <p class="texte text-center">Le bac est une étape indispensable pour passer à l’enseignement supérieur. Cependant, nous savons que les genres ne sont pas égaux et autant présents dans les filières. Nous allons étudier ici la présence des filles et des garçons dans les différents types de bac, parmi ceux qui continuent dans l'enseignement supérieur. </p>
 
     
     <div class="xl:my-32">
-        <h4 class="h2 my-10 text-Bleu_clair text-center font-bold">Répartition des filles selon les types de bac entre 2010 et 2021</h4>
     <h4 class="texte my-5 text-black text-center font-bold">Répartition des filles et des garçons selon les types de bac entre 2010 et 2021</h4>
     <div class="md:flex justify-center gap-10">
     <DonutFille class="ml-5 my-5 md:w-1/3 md:h-1/3"/>
@@ -13,6 +12,7 @@
     </div>
     </div>
 
+    <h4 class="h2 my-10 text-Bleu_clair text-center font-bold">Répartition des filles selon les types de bac entre 2010 et 2021</h4>
     <p class="texte xl:mx-10">On peut lire sur ces graphiques que les femmes sont majoritaires dans les titulaires du bac général parmi ceux qui continuent les études supérieures. Elles sont 2 227 115 à avoir réussi ce bac et a continué les études entre 2010 et 2021, soit 25% de plus que les hommes dans ce même bac.</p>
     <p class="texte xl:mx-10">A l’inverse, elles sont minoritaires dans les bacs professionnels. En effet, elles sont 38% de moins que les hommes. Seul le bac technologique dispose d’une équité de présence des deux genres.</p>
 
@@ -26,7 +26,7 @@
 
     <div class="lg:flex items-center ">
     <img class="lg:w-1/2 lg:h-1/2 mx-auto my-10" src="/fille_travaille.jpg" alt="fille qui travaille"/>
-    <p class="lg:w-1/2 lg:h-1/2 texte">En effet, ils vont encourager la docilité des filles, les faire grandir dans un cadre dont elles ne devront pas sortir. Elles doivent davantage obéir et c’est pour cette raison qu’elles vont plus facilement intérioriser les règles et les devoirs de l’école. Les filles vont donc être élevé et éduqué dans une manière de penser qui vont leur permettre de s’adapter aux règles de l’école, ce qui va améliorer les chances de leurs réussites.</p><br/>
+    <p class="lg:w-1/2 lg:h-1/2 texte">En effet, ils vont encourager la docilité des filles, les faire grandir dans un cadre dont elles ne devront pas sortir. Elles doivent davantage obéir et c’est pour cette raison qu’elles vont plus facilement intérioriser les règles et les devoirs de l’école. Les filles vont donc être élevées et éduquées dans une manière de penser qui vont leur permettre de s’adapter aux règles de l’école, ce qui va améliorer les chances de leurs réussites.</p><br/>
     </div>
 
     <div class="lg:flex items-center ">
@@ -36,7 +36,7 @@
 
     <h4 class="h2 mt-5 text-Bleu_clair text-center font-bold">Répartition des garçons selon les types de bac entre 2010 et 2021</h4>
     <p class="texte mt-10 xl:mx-10">Si nous nous intéressons maintenant à la répartition des garçons selon le type de bac, on peut voir que les garçons bacheliers d’un bac général sont moins nombreux que les filles. Ils les dépassent cependant lorsqu’il s’agit du bac professionnel. Cette situation peut également trouver une réponse dans le processus de socialisation. </p>
-    <p class="texte xl:mx-10" >A l’inverse des filles, les garçons sont encouragés à sortir du cadre et à s’exprimer, à se rebeller. C’est notamment ce que l’on peut observer lorsque les garçons sont encourager aux activités extérieurs où ils peuvent se défouler ou encore dans les jeux de guerre. </p>
+    <p class="texte xl:mx-10" >A l’inverse des filles, les garçons sont encouragés à sortir du cadre et à s’exprimer, à se rebeller. C’est notamment ce que l’on peut observer lorsque les garçons sont encourager aux activités extérieures où ils peuvent se défouler ou encore dans les jeux de guerre. </p>
 
     <div class="lg:flex items-center ">
         <img class="mx-auto my-10 lg:w-1/2 lg:h-1/2" src="/garcon_travaille.jpg" alt="garçon qui travaille"/>

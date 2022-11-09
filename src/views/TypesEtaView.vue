@@ -3,8 +3,7 @@
     <p class="texte text-center">Sur cette page, vous allez pouvoir rechercher un nom d’école, une région,... et voir la répartition des types d’établissement selon vos critères.</p>
 
     <div class="flex flex-col mt-10 gap-5">
-    <img src="/rectangle.jpg" alt="tableau"/>
-    <img src="/rectangle.jpg" alt="Area"/>
+    <TabArea class="mx-5"/>
     </div>
 
     <p class="mt-5 texte xl:mx-10">Ce graphique permet d’avoir accès à la répartition des types d’établissement selon la région par exemple, et donc de savoir quel type d’établissement est le plus présent par région,... </p>
@@ -21,4 +20,5 @@
 <script setup>
 import bouton from "../components/Bouton.vue"
 import Footer from "../components/Footer.vue"
+import TabArea from "../components/TableauArea.vue"
 </script>
