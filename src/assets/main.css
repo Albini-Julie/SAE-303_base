@@ -11,6 +11,6 @@
 
     .texte {
         @apply font-noto-sans xl:text-[25px] md:text-[20px] text-[14px] mx-3
-    }
+    };
 
 }
