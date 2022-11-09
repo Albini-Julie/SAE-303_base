@@ -31,10 +31,8 @@ import {getLabels, countDatas} from "../composables/utilsApp"
 
     
         const chartData = reactive({
-            
             labels: [],
-            datasets : [{}
-        ]
+            datasets : [{}]
         })
 
         
